@@ -1,0 +1,85 @@
+// Hero components
+// --------------------
+.hero-wrap
+    overflow: hidden
+    position: relative
+
+.hero-wrap:before
+    content: " "
+    background: url('@/assets/images/banner.jpeg')
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    filter: brightness(0.4)
+    position: absolute
+    display: block
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+
+// Tab menu
+// --------------------
+
+.tabs-sections ul
+    display: flex
+    justify-content: flex-start
+    list-style: none
+
+.tabs-sections ul li.is-active
+    font-weight: 700
+
+.tabs-sections ul li
+    color: $text
+
+.tabs-sections ul li
+    padding-left: 0 !important
+
+.tabs-sections ul li:after
+    content: "→"
+    margin: 0 0.5rem
+    font-weight: 700
+
+.tabs-sections ul li:last-child:after
+    content: ""
+
+.tabs-content > div
+    display: none
+
+.tabs-content > div.is-active
+    display: block
+
+// Divider
+// --------------------
+.divider
+    border-top: 1px solid $primary
+
+// Line clamp
+// --------------------
+.line-clamp-1, .line-clamp-2, .line-clamp-3
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    overflow: hidden
+
+.line-clamp-1
+    -webkit-line-clamp: 1
+
+.line-clamp-2
+    -webkit-line-clamp: 2
+
+.line-clamp-3
+    -webkit-line-clamp: 3
+
+// Utilities
+.b-0
+    border: 0
+
+.cr-0
+    border-radius: 0
+
+.flex-end
+    display: flex
+    justify-content: flex-end
+
+.content li + li
+    margin-top: 0

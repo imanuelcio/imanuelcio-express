@@ -1,0 +1,10 @@
+version: "3"
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: imanuelcio-express
+        ports:
+            - ${PORT}:${PORT}
+        command: "npm run start"
